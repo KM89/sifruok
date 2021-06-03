@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel='stylesheet' href='/stylesheets/global_style.css' />
+    <link rel='stylesheet' href='/stylesheets/xor_operation_info.css' />
+  </head>
+  <body>
+    <div class="main">
+        <div class="wrapper">
+            <h1><%= title %></h1>
+            <h2>Simetrinis šifravimas. XOR algoritmas</h2>
+            <h3>XOR algoritmo veikimo principas</h3>
+            <div class="table_container">
+                <table>
+                    <tr>
+                    <td>Šifruojamų simbolių seka</td>
+                    <td>T</td>
+                    <td>E</td>
+                    <td>K</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>A</td>
+                    <td>S</td>
+                    </tr>
+                    <tr>
+                    <td>Simbolių dvejetainis kodas</td>
+                    <td>0101 0100</td>
+                    <td>0100 0101</td>
+                    <td>0100 1011</td>
+                    <td>0101 0011</td>
+                    <td>0101 0100</td>
+                    <td>0100 0001</td>
+                    <td>0101 0011</td>
+                    </tr>
+                    <tr>
+                    <td>Loginė operacija</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    <td>⊕</td>
+                    </tr>
+                    <tr>
+                    <td>Rakto simbolių seka</td>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>R</td>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>R</td>
+                    <td>X</td>
+                    </tr>
+                    <tr>
+                    <td>Rakto simbolių dvejetainis kodas</td>
+                    <td>0101 1000</td>
+                    <td>0100 1111</td>
+                    <td>0101 0010</td>
+                    <td>0101 1000</td>
+                    <td>0100 1111</td>
+                    <td>0101 0010</td>
+                    <td>0101 1000</td>
+                    </tr>
+                    <tr>
+                    <td>XOR operacijos rezultatas</td>
+                    <td>0000 1100</td>
+                    <td>0000 1010</td>
+                    <td>0001 1001</td>
+                    <td>0000 1011</td>
+                    <td>0001 1011</td>
+                    <td>0001 0011</td>
+                    <td>0000 1011</td>
+                    </tr>
+                    <tr>
+                    <td>Rezultato simbolių 16-ainis kodas</td>
+                    <td>0C</td>
+                    <td>0A</td>
+                    <td>19</td>
+                    <td>0B</td>
+                    <td>1B</td>
+                    <td>13</td>
+                    <td>0B</td>
+                    </tr>
+                </table>
+                </div> 
+            <button onclick="window.location.href='http://localhost:3000/simetrinio_sifravimo_simuliacija';">Šifravimo proceso simuliacija</button>
+            <button onclick="window.location.href='http://localhost:3000/sifravimo_tipai';">Atgal</button>
+        </div>
+    </div>
+  </body>
+</html>

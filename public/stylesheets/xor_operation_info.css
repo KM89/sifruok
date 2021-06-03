@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto+Condensed&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    width: 95%;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+td:nth-of-type(1) {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold; }
+
+tr:nth-of-type(1),
+tr:nth-of-type(2),
+tr:nth-of-type(4),
+tr:nth-of-type(5) {
+    background-color: #a6cde0;
+}
+
+tr:nth-of-type(6),
+tr:nth-of-type(7) {
+    background-color: #209c70;
+}
+
+td:first-of-type {
+    background-color: #2584b8;
+}
+
+tr:nth-of-type(1),
+tr:nth-of-type(4),
+tr:nth-of-type(7) {
+    font-weight: bold;
+}
+
+tr:nth-of-type(1) td:not(:first-child),
+tr:nth-of-type(4) td:not(:first-child) {
+    border-bottom-color: transparent;
+    border-bottom-style: hidden;
+}
+
+@media only screen and (max-width: 905px) {
+    td {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    td:nth-of-type(5),
+    td:nth-of-type(6),
+    td:nth-of-type(7) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    td {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+        td:nth-of-type(1) {
+            font-size: 14px;
+        }   
+}
+
+@media only screen and (max-width: 480px) {
+    td:nth-of-type(1) {
+        width: 30%;
+    }
+
+    td {
+        padding: 2px;
+    }
+
+    tr:nth-of-type(2) td,
+    tr:nth-of-type(5) td,
+    tr:nth-of-type(6) td {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    td:nth-of-type(1) {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+}
+
+
+
+    
+
+
+
+  

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel='stylesheet' href='/stylesheets/global_style.css' />
+    <link rel='stylesheet' href='/stylesheets/rsa_operation_info.css' />
+  </head>
+  <body>
+     <div class="wrapper">
+        <h1><%= title %></h1>
+        <h2>Asimetrinis šifravimas. RSA algoritmas</h2>
+        <h3>RSA algoritmo veikimo principas</h3>
+        <table>
+          <tr>
+            <th>Raktų sudarymas</th>
+            <th>Pavyzdys</th>
+          </tr>
+          <tr>
+            <td>Parenkami du pirminiai skaičiai:</br><i>p</i> ir <i>q</i></td>
+            <td><i>p</i> = 11; <i>q</i> = 17;</td>
+          </tr>
+          <tr>
+            <td>Pritaikoma Oilerio funkcija Φ(<i>n</i>):</br>(<i>p</i> - 1) × (<i>q</i> - 1)</td>
+            <td>(11 - 1) × (17 - 1) =</br>= 160;</td>
+          </tr>
+          <tr>
+            <td>Skaičiuojamas modulis <i>n</i>:</br><i>n</i> = <i>p</i> × <i>q</i>;</td>
+            <td><i>n</i> = 11 × 17 = 187;</td>
+          </tr>
+          <tr>
+            <td>Parenkamas viešasis raktas <i>e</i>, tenkinantis šias sąlygas:</br><i>DBD</i>(<i>e</i>, Φ(<i>n</i>) = 1;</br>1 < <i>e</i> ≤ <i>n</i>;</td>
+            <td>1 < 7 ≤ 160;</br><i>DBD</i>(7, 160) = 1;</td>
+          </tr>
+          <tr>
+            <td>Parenkamas privatusis raktas <i>d</i>, kad būtų teisinga ši lygybė:</br><i>d</i> × <i>e</i> = 1 mod Φ(<i>n</i>);</td>
+            <td>23 × 7 = 1 mod 160;</td>
+          </tr>
+          <tr>
+            <th colspan="2">Šifravimas viešuoju raktu</th>
+          </tr>
+          <tr>
+            <td>Užšifruotas tekstas keičiamas į natūraliuosius skaičius <i>t</i>, tenkinančius sąlygą:</br>0 < <i>t</i> < <i>n</i>;</td>
+            <td>"q" --> 113 (ASCII kodas)</td>
+          </tr>
+          <tr>
+            <td>Atliekama šifravimo operacija:</br><i>c</i> = <i>t</i><sup>e</sup> mod <i>n</i></td>
+            <td><i>c</i> = 113<sup>7</sup> mod 187 =</br>= 20</td>
+          </tr>
+          <tr>
+            <th colspan="2">Dešifravimas privačiuoju raktu</th>
+          </tr>
+          <tr>
+            <td>Atliekama dešifravimo operacija:</br><i>t</i> = <i>c</i><sup>d</sup> mod <i>n</i></td>
+            <td><i>t</i> = 20<sup>23</sup> mod 187 =</br>= 113 ("q")</td>
+          </tr>
+       </table>
+
+       <button onclick="window.location.href='http://localhost:3000/asimetrinio_sifravimo_simuliacija';">Šifravimo proceso simuliacija</button>
+       <button onclick="window.location.href='http://localhost:3000/sifravimo_tipai';">Atgal</button>  
+    </div>
+  </body>
+  
+</html>

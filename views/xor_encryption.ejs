@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel='stylesheet' href='/stylesheets/global_style.css' />
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1><%= title %></h1>
+        <h2>Simetrinis šifravimas. XOR algoritmas</h2>
+
+        <div class="textarea_container">
+            <h3>Tekstas užšifravimui</h3>
+            <textarea class="textarea1" placeholder="Įveskite tekstą, kurį norite užšifruoti"></textarea>
+        </div>
+    
+        <div class="textarea_container">
+            <h3>Raktas</h3>
+            <textarea class="textarea2" placeholder="Įveskite pasirinktą raktą, kuriuo norite užšifruoti savo tekstą"></textarea>
+        </div>
+
+        <button onclick="encrypt()">Šifruoti</button>
+
+        <div class="textarea_container">
+            <h3 class="headingOfEncryptedData">Užšifruotas tekstas</h3>
+            <textarea class="textarea3"></textarea>
+        </div>
+
+        <div class="textarea_container">
+            <h3>Raktas</h3>
+            <textarea class="textarea4" placeholder='Įveskite raktą, kurį naudojote teksto užšifravimui arba paspauskite mygtuką "Įkopijuoti raktą". Įvedus kitokį raktą, tekstas bus dešifruotas neteisingai'></textarea>
+        </div>
+
+        <button onclick="copyKey()">Įkopijuoti raktą</button>
+        <button onclick="decrypt()">Dešifruoti</button>
+
+        <div class="textarea_container">
+            <h3 class="headingOfDecryptedData">Dešifruotas tekstas</h3>
+            <textarea class="textarea5"></textarea>
+        </div>
+
+        <button onclick="window.location.href='http://localhost:3000/rsa_veikimo_principas';">RSA algoritmas</button>
+		<button onclick="window.location.href='http://localhost:3000/simetrinio_sifravimo_simuliacija';">Atgal</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/javascripts/xor_encryption.js"></script>
+  </body>
+</html>

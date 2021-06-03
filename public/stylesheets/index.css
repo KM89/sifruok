@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.image_row {
+    background-color: #a6cde0;
+    border: 3px solid #209c70;
+}
+
+.next_btn {
+    margin-top: 30px;
+}
+
+.image_container {
+    margin: auto;
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px; }
+
+    @media only screen and (max-width: 800px) {
+        .image_container {
+            margin: 40px auto;
+        }
+    }
+
+.program_description_container {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+    @media only screen and (max-width: 500px) {
+        .program_description_container {
+            font-size: 80%;
+            line-height: 1.5;
+        }
+    }

@@ -1,0 +1,70 @@
+img {
+    width: 150px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.description_container {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.image_container {
+    background-color: #a6cde0;
+    border: 3px solid #209c70;
+}
+
+.div1,
+.div2 {
+    width: 400px;
+    display: inline-block;
+}
+
+.div1 {
+    margin-right: 15%;
+}
+
+.back_btn {
+    margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 970px) {
+    .div1,
+    .div2 {
+        display: block;
+        width: auto;
+    }
+
+    .div1 {
+        margin-right: 0;
+    }
+
+    .back_btn {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    img {
+        width: 100px;
+    }
+
+    .description_container {
+        font-size: 13px;
+    }
+}

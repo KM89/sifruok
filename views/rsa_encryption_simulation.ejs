@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+	<link rel='stylesheet' href='/stylesheets/global_style.css' />
+	<link rel='stylesheet' href='/stylesheets/rsa_encryption_simulation.css' />
+  </head>
+  <body>
+	<div class="wrapper">
+		<h1><%= title %></h1>
+		<h2>Asimetrinio šifravimo simuliacija. RSA algoritmas</br>Spauskite mygtuką "Kitas žingsnis"</h2>
+	
+		<div class="row_1_container">
+			<div class="sim_block_container_1">
+				<div class="image_container1 sim_image_container"><img src="/images/rsa_sifravimo_procesas1.jpg" alt="RSA šifravimo proceso 1-as žingsnis"></div>
+				<button class="button1">Kitas žingsnis</button>
+			</div>
+			<div class="sim_block_container_2">
+				<div class="image_container2 sim_image_container"><img src="" alt="RSA šifravimo proceso 2-as žingsnis"></div>
+				<button class="button2">Kitas žingsnis</button>
+			</div>
+			<div class="sim_block_container_3">
+				<div class="image_container3 sim_image_container"><img src="/images/rsa_sifravimo_procesas3.jpg" alt="RSA šifravimo proceso 3-as žingsnis"></div>
+				<button class="button3">Kitas žingsnis</button>
+				<div class="arrow_icon1"><img src="/images/arrow.jpg"></div>
+			</div>
+		</div>
+		<div class="row_2_container">
+			<div class="sim_block_container_4">
+				<div class="image_container4 sim_image_container"><img src="/images/rsa_sifravimo_procesas4.jpg" alt="RSA šifravimo proceso 4-as žingsnis"></div>
+				<button class="button4">Kitas žingsnis</button>
+				<div class="arrow_icon2"><img src="/images/arrow.jpg"></div>
+			</div>
+		</div>
+		<div class="row_3_container">
+			<div class="sim_block_container_5">
+				<div class="image_container5 sim_image_container"><img src="/images/rsa_sifravimo_procesas5.jpg" alt="RSA šifravimo proceso 5-as žingsnis"></div>
+				<button class="button5">Kitas žingsnis</button>
+			</div>
+			<div class="sim_block_container_6">
+				<div class="image_container6 sim_image_container"><img src="" alt="RSA šifravimo proceso 6-as žingsnis"></div>
+				<button class="button6">Kitas žingsnis</button>
+			</div>
+			<div class="sim_block_container_7">
+				<div class="image_container7 sim_image_container"><img src="/images/rsa_sifravimo_procesas7.jpg" alt="RSA šifravimo proceso 7-as žingsnis"></div>
+			</div>
+			
+		</div>
+		<div class="row_4_container">
+			<button class="button7" onclick="window.location.href='http://localhost:3000/rsa_sifravimas';">Pereiti prie šifravimo</button>
+			<button class="back_btn" onclick="window.location.href='http://localhost:3000/rsa_veikimo_principas';">Atgal</button>
+		</div>
+		
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/javascripts/rsa_encryption_simulation.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+	<link rel='stylesheet' href='/stylesheets/global_style.css' />
+	<link rel='stylesheet' href='/stylesheets/rsa_encryption.css' />
+  </head>
+  <body>
+	  <div class="wrapper">
+		<h1><%= title %></h1>
+		<h2>Asimetrinis šifravimas. RSA algoritmas</h2>
+
+		<div class="textarea_container">
+			<h3>Viešasis raktas</h3>
+			<textarea class="textarea1" placeholder='Sugeneruokite raktą, paspaudę mygtuką "Sugeneruoti raktų porą"'></textarea>
+		</div>
+
+		<div class="textarea_container">
+			<h3>Privatusis raktas</h3>
+			<textarea class="textarea2" placeholder='Sugeneruokite raktą, paspaudę mygtuką "Sugeneruoti raktų porą"'></textarea>
+		</div>
+
+		<button onclick="generateKeys()">Sugeneruoti raktų porą</button>
+
+		<div class="textarea_container">
+			<h3>Tekstas užšifravimui</h3>
+			<textarea class="textarea3" placeholder="Įveskite tekstą, kurį norite užšifruoti"></textarea>
+		</div>
+
+		<div class="textarea_container">
+			<h3>Šifravimo raktas</h3>
+			<textarea class="textarea4" placeholder='Įveskite viešajį raktą arba paspauskite mygtuką "Įkopijuoti viešajį raktą"'></textarea>
+		</div>
+		
+		<button onclick="copyKey('public')">Įkopijuoti viešąjį raktą</button>
+		<button onclick="transformData('encrypt')">Šifruoti</button>
+
+		<div class="textarea_container">
+			<h3 class="headingOfEncryptedData">Užšifruotas tekstas</h3>
+			<textarea class="textarea5"></textarea>
+		</div>
+
+		<div class="textarea_container">
+			<h3>Dešifravimo raktas</h3>
+			<textarea class="textarea6" placeholder='Įveskite privatųjį raktą arba paspauskite mygtuką "Įkopijuoti privatųjį raktą"'></textarea>
+		</div>
+
+		<button onclick="copyKey('private')">Įkopijuoti privatųjį raktą</button>
+		<button onclick="transformData('decrypt')">Dešifruoti</button>
+
+		<div class="textarea_container">
+			<h3 class="headingOfDecryptedData">Dešifruotas tekstas</h3>
+			<textarea class="textarea7"></textarea>	
+		</div>
+
+		<button onclick="window.location.href='http://localhost:3000/xor_veikimo_principas';">XOR algoritmas</button>
+		<button onclick="window.location.href='http://localhost:3000/asimetrinio_sifravimo_simuliacija';">Atgal</button>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/javascripts/rsa_encryption.js"></script>
+  </body>
+  
+</html>

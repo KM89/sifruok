@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel='stylesheet' href='/stylesheets/global_style.css' />
+    <link rel='stylesheet' href='/stylesheets/encryption_kinds.css' />
+  </head>
+  <body>
+      <div class="main">
+        <div class="wrapper">
+            <h1><%= title %></h1>
+            <div class="div1">
+                <h2>Simetrinis šifravimas</h2>
+                <div class="description_container">Šifravimas vadinamas simetriniu, kai duomenų užšifravimui ir dešifravimui naudojamas vienas ir tas pats raktas.</div>
+                <div class="image_container">
+                    <img src="/images/simetrinis_sifravimas.png" alt="Simetrinio šifravimo ženklas">
+                </div>
+                <button onclick="window.location.href='http://localhost:3000/xor_veikimo_principas';">XOR algoritmas</button>
+            </div>
+            <div class="div2">
+                <h2>Asimetrinis šifravimas</h2>
+                <div class="description_container">Šifravimas vadinamas asimetriniu, kai naudojami dveji raktai - <i>viešasis raktas</i>, skirtas duomenims užšifruoti ir <i>privatusis raktas</i> jiems dešifruoti.</div>
+                <div class="image_container">
+                    <img src="/images/asimetrinis_sifravimas.png" alt="Asimetrinio šifravimo ženklas">
+                </div>
+                <button onclick="window.location.href='http://localhost:3000/rsa_veikimo_principas';">RSA algoritmas</button>
+            </div>
+            <button class="back_btn" onclick="window.location.href='http://localhost:3000';">Atgal</button>
+        </div>
+      </div>
+  </body>
+</html>

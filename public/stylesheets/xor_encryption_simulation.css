@@ -1,0 +1,36 @@
+button {
+    display: none;
+}
+
+.button1,
+.button5,
+.back_btn {
+    display: block;
+}
+
+.sim_block_container_2,
+.sim_block_container_3,
+.sim_block_container_4,
+.sim_block_container_5 {
+    display: none;
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+.sim_block_container_1 {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.arrow_icon1,
+.arrow_icon2,
+.arrow_icon3,
+.arrow_icon4 {
+    display: none;
+    background-color: white;
+}
+
+.sim_image_container1 {
+    padding-left: 15px;
+}

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+	<link rel='stylesheet' href='/stylesheets/global_style.css' />
+	<link rel='stylesheet' href='/stylesheets/xor_encryption_simulation.css' />
+  </head>
+  <body>
+	<div class="wrapper">
+		<h1><%= title %></h1>
+		<h2>Simetrinio šifravimo simuliacija. XOR algoritmas</br>Spauskite mygtuką "Kitas žingsnis"</h2>
+	
+		<div class="sim_block_container_1">
+			<div class="sim_image_container sim_image_container1"><img src="/images/xor_sifravimo_procesas1.jpg" alt="XOR šifravimo proceso 1-as žingsnis"></div>
+			<button class="button1">Kitas žingsnis</button>
+		</div>
+
+		<div class="arrow_icon1"><img src="/images/arrow.jpg"></div>
+		
+		<div class="sim_block_container_2">
+			<div class="sim_image_container"><img src="/images/xor_sifravimo_procesas2.jpg" alt="XOR šifravimo proceso 2-as žingsnis"></div>
+			<button class="button2">Kitas žingsnis</button>
+		</div>
+
+		<div class="arrow_icon2"><img src="/images/arrow.jpg"></div>
+		
+		<div class="sim_block_container_3">
+			<div class="sim_image_container"><img src="/images/xor_sifravimo_procesas3.jpg" alt="XOR šifravimo proceso 3-as žingsnis"></div>
+			<button class="button3">Kitas žingsnis</button>
+		</div>
+
+		<div class="arrow_icon3"><img src="/images/arrow.jpg"></div>
+
+		<div class="sim_block_container_4">
+			<div class="sim_image_container"><img src="/images/xor_sifravimo_procesas4.jpg" alt="XOR šifravimo proceso 4-as žingsnis"></div>
+			<button class="button4">Kitas žingsnis</button>
+		</div>
+
+		<div class="arrow_icon4"><img src="/images/arrow.jpg"></div>
+		
+		<div class="sim_block_container_5">
+			<div class="sim_image_container"><img src="/images/xor_sifravimo_procesas5.jpg" alt="XOR šifravimo proceso 5-as žingsnis"></div>
+		</div>	
+		
+		<button class="button5" onclick="window.location.href='http://localhost:3000/xor_sifravimas';">Pereiti prie šifravimo</button>
+		<button class="back_btn" onclick="window.location.href='http://localhost:3000/xor_veikimo_principas';">Atgal</button>	
+		
+	
+
+	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/javascripts/xor_encryption_simulation.js"></script>
+  </body>
+  
+</html>

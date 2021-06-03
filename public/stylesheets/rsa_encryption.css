@@ -1,0 +1,23 @@
+.textarea_container:nth-of-type(1),
+.textarea_container:nth-of-type(2) {
+    display: inline-block;
+    width: 370px;
+}
+
+    @media only screen and (max-width: 1080px) {
+        .textarea_container:nth-of-type(1),
+        .textarea_container:nth-of-type(2) {
+            display: block;
+            width: auto;
+        }
+}
+
+.textarea_container:nth-of-type(1) {
+    margin-right: 40px; }
+    
+    @media only screen and (max-width: 1080px) {
+        .textarea_container:nth-of-type(1) {
+            margin-right: auto;
+        }
+    }
+

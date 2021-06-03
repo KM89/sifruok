@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\public",
+    "\\public\\javascripts",
+    "\\public\\stylesheets",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\views\\encryption_kinds.ejs",
+  "PreviewInSolutionExplorer": false
+}
