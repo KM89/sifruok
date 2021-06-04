@@ -16,9 +16,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "node-rsa": "^1.1.1"
-  },
-  "devDependencies": {
+    "node-rsa": "^1.1.1",
     "crypto-xor": "^1.1.0"
   }
 }
