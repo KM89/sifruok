@@ -5,7 +5,11 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "engines": {
+    "node": "14.15.5"
+  },
   "dependencies": {
+    "check-node-version": "^4.1.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "^2.6.2",
