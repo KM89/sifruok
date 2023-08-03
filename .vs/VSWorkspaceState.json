@@ -8,6 +8,6 @@
     "\\routes",
     "\\views"
   ],
-  "SelectedNode": "\\Procfile",
+  "SelectedNode": "\\views\\encryption_kinds.ejs",
   "PreviewInSolutionExplorer": false
 }
